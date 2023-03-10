@@ -1,17 +1,22 @@
-function ChangeName01() {
+function ChangeName() {
   let text;
-  let person = prompt("Please enter your name:", "Insert name here!!!!!!!!!!!!!!!!");
+  let person = prompt("Please enter your name:", "Insert name here!");
   if (person == null || person == "") {
-    text = "User cancelled the prompt.";
+    text = "Please fill your NAME";
   } else {
-    text = "Hello " + person + "! How are you today?";
+    text = "OMG " + person + "! How are you today?";
   }
   document.getElementById("name").innerHTML = text;
 }
 
 
-function ChangeName02() {
-  let text;
-  let person = prompt("Please enter your name:", "Insert name here!!!!!!!!!!!!!!!!");
-  document.getElementById("name02").innerHTML = text;
+function FirstName() {
+  let textnew;
+  let personnew = prompt("Please enter your name:","InsertNamePleaseeeeee");
+  if (personnew == null || personnew == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "Aloha " + personnew + "! How are you today?";
+  }
+  document.getElementById("namenew").innerHTML = textnew;
 }
